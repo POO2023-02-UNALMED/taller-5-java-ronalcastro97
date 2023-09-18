@@ -25,7 +25,7 @@ public class TestCantidades {
 		Zona z2 = new Zona();
 		zoo.agregarZonas(z1);
 		zoo.agregarZonas(z2);
-		z1.agregarAnimales(Mamifero.crearCaballo("test", 11, "M"));
+		z1.agregarAnimales(Mamifero.crearCaballo("test", 11, "M")); 	
 		z1.agregarAnimales(Mamifero.crearCaballo("test", 11, "M"));
 		z1.agregarAnimales(Mamifero.crearLeon("test", 11, "M"));
 		z1.agregarAnimales(Ave.crearHalcon("test", 11, "M"));
