@@ -53,9 +53,26 @@ public class Animal {
 	}
 	public Zona getZona() {
 		return zona;
-	}
+	} 
 	public void setZona(Zona zona) {
-		this.zona = zona;
+		this.zona = zona; 
+	}
+	public  static String  totalPorTipo() {
+		return ("Mamiferos:" + Mamifero.getListado().size() + "\n" +
+				"Aves:" + Ave.getListado().size() + "\n" +
+				 "Reptiles:" + Reptil.getListado().size() + 
+				 "Peces:" + Pez.getListado().size() + 
+				 "Anfibios:" + Anfibio.getListado().size());
+
+		 	}
+	@Override
+	public String toString() { 
+		return "mi nombre es" + this.nombre + ", tengo una edad de " + this.edad + ", habito en" + this.habitat +
+				"y mi genero es" + this.genero;
+	}
+
+	public String  movimiento() {
+		return "desplazarse";
 	}
 	
 }
