@@ -62,7 +62,7 @@
 			Anfibio.salamandras++;
 			return salamandra;
 		}	
-		public int cantidadAnfibios() {
-			return Anfibio.getListado().size();
+		public static int cantidadAnfibios() {
+			return Anfibio.listado.size();
 		}
 	}

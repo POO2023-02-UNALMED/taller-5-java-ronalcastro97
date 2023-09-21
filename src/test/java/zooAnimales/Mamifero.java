@@ -70,7 +70,7 @@ public class Mamifero extends Animal{
 		Mamifero.leones++;
 		return leon;
 	}
-	public static int CantidadMamiferos() {
+	public static int cantidadMamiferos() {
 		return Mamifero.listado.size();
 	}
 	}

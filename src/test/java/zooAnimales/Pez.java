@@ -62,7 +62,7 @@
 			Pez.bacalaos++;
 			return bacalao;
 		}
-		public static int CantidadPeces() {
+		public static int cantidadPeces() {
 			return Pez.listado.size();
 		}
 	}
