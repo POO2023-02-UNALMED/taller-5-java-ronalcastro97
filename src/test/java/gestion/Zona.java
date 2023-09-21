@@ -29,7 +29,7 @@ public class Zona {
 	}
 
 	public void setZoo(Zoologico zoo) {
-		Zoo = zoo;
+		this.Zoo = zoo;
 	}
 
 	public ArrayList<Animal> getAnimales() {
