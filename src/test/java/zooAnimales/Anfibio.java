@@ -1,4 +1,4 @@
-package ZooAnimales;
+package zooAnimales;
 import gestion.Zona;
 import java.util.ArrayList;
 
