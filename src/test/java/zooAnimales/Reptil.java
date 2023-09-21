@@ -51,17 +51,17 @@ public class Reptil extends Animal{
 	public String movimiento(){
 		return "reptar";	
 	}	
-	public Reptil crearIguana(String nombre,int edad,String genero){
+	public static Reptil crearIguana(String nombre,int edad,String genero){
 		Reptil iguana= new Reptil(nombre,edad,"humedad",genero,"verde",3);
 		Reptil.iguanas++;
 		return iguana;
 	}
-	public Reptil crearSerpiente(String nombre,int edad,String genero){
+	public static Reptil crearSerpiente(String nombre,int edad,String genero){
 		Reptil serpiente= new Reptil(nombre,edad,"jungla",genero,"blanco",1);
 		Reptil.serpientes++;
 		return serpiente;
 	}
-	public int cantidadReptiles() {
+	public static int cantidadReptiles() {
 		return Reptil.getListado().size();
 		}
 }
