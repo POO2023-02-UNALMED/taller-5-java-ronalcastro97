@@ -3,58 +3,60 @@ package zooAnimales;
 import java.util.ArrayList;
 
 public class Ave extends Animal{
-	private static ArrayList<Ave>listado;
-	public static int halcones=0;
-	public static int aguilas=0;
-	private  String colorPlumas;
-	public Ave() {
-		super();
-	}
-	public Ave(String nombre, int edad, String habitat, String genero,String colorPlumas) {
-		super(nombre, edad, habitat, genero);
-		this.colorPlumas=colorPlumas;
-		this.listado=new ArrayList<>();
-	}
-	public static ArrayList<Ave> getListado() {
-		return listado;
-	}
-	public static void setListado(ArrayList<Ave> listado) {
-		Ave.listado = listado;
-	}
-	public static int getHalcones() {
-		return halcones;
-	}
-	public static void setHalcones(int halcones) {
-		Ave.halcones = halcones;
-	}
-	public static int getAguilas() {
-		return aguilas;
-	}
-	public static void setAguilas(int aguilas) {
-		Ave.aguilas = aguilas;
-	}
-	public String getColorPlumas() {
-		return colorPlumas;
-	}
-	public void setColorPlumas(String colorPlumas) {
-		this.colorPlumas = colorPlumas;
-	}
-	@Override
-	public String movimiento() {
-		return "volar";
-	}
-	public static Ave crearHalcon(String nombre,int edad,String genero) {
-		Ave halcon= new Ave(nombre,edad,"montanas",genero,"cafe glorioso"); 
-		Ave.halcones++;
-		return halcon 	;	 
-	}
-	
-	public static Ave crearAguila(String nombre,int edad,String genero) {
-		Ave aguila=new Ave(nombre,edad,"montanas",genero,"blanco y amarillo");
-		Ave.aguilas++;
-		return aguila;
-	}
-	public static int cantidadAves() {
-		return listado.size();
-	}
+    private static ArrayList<Ave> listado;
+    public static int halcones = 0;
+    public static int aguilas = 0;
+    private String colorPlumas;
+
+    public Ave() {
+        if (listado == null)
+            listado = new ArrayList<Ave>();
+        listado.add(this);
+    }
+
+    public Ave(String nombre, int edad, String habitat, String genero, String colorPlumas) {
+        super(nombre, edad, habitat, genero);
+        this.colorPlumas = colorPlumas;
+        totalAnimales++;
+        if (listado == null)
+            listado = new ArrayList<Ave>();
+        listado.add(this);
+    }
+
+    public String getColorPlumas() {
+        return this.colorPlumas;
+    }
+
+    public void setColorPlumas(String colorPlumas) {
+        this.colorPlumas = colorPlumas;
+    }
+    
+    public static int cantidadAves(){
+        return listado.size();
+    }
+
+    @Override
+    public String movimiento(){
+        return "volar";
+
+    }
+
+    public static Ave crearHalcon(String nombre, int edad, String genero){
+        String colorPlumas = "cafe glorioso" ;
+        String habitat = "montanas";
+        Ave h = new Ave(nombre, edad, habitat, genero, colorPlumas);
+        listado.add(h);
+        halcones++;
+        return h;
+    }
+
+    public static Ave crearAguila(String nombre, int edad, String genero){
+        String colorPlumas = "blanco y amarillo" ;
+        String habitat = "montanas";
+        Ave a = new Ave(nombre, edad, habitat, genero, colorPlumas);
+        listado.add(a);
+        aguilas++;
+        return a;
+
+    }
 }

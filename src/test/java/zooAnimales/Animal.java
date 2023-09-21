@@ -3,7 +3,7 @@ package zooAnimales;
 import gestion.Zona;
 
 public class Animal {
-	private static int totalAnimales=0;
+	public static int totalAnimales=0;
 	private String nombre;
 	private int edad;
 	private String habitat;
