@@ -20,7 +20,7 @@
 		}
 	
 		public  static ArrayList<Anfibio> getListado() {
-			return listado;
+			return Anfibio.listado;
 		}
 		public static void setListado(ArrayList<Anfibio> listado) {
 			Anfibio.listado = listado;
