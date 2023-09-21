@@ -8,11 +8,15 @@ public class Zoologico {
 	private String ubicacion;
 	private ArrayList<Zona>Zona;
 	public Zoologico() {
-		
+		if(Zona==null)
+			Zona=new ArrayList<>();
 	}
 	
 	public Zoologico(String nombre,String ubicacion) {
-		this.Zona=new ArrayList<>();
+		this.nombre=nombre;
+		this.ubicacion=ubicacion;
+		if(Zona==null)
+			this.Zona=new ArrayList<>();
 	}
 
 	public String getNombre() {
