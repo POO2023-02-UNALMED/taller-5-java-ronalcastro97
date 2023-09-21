@@ -1,6 +1,5 @@
 package zooAnimales;
 import java.util.ArrayList;
-import gestion.*;
 
 public class Mamifero extends Animal{
 	private  static ArrayList<Mamifero>listado;
@@ -74,4 +73,4 @@ public class Mamifero extends Animal{
 	public static int cantidadMamiferos() {
 		return Mamifero.listado.size();
 	}
-	}
+}
