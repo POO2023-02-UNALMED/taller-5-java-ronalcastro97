@@ -1,6 +1,7 @@
 package zooAnimales;
-import java.util.ArrayList;
 import gestion.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Animal {
 	public static int totalAnimales=0;
@@ -51,28 +52,27 @@ public class Animal {
 	public void setGenero(String genero) {
 		this.genero = genero;
 	}
-	public Zona getZona() {
+	public List<Zona> getZona() {
 		return zona;
 	} 
-	public void setZona(Zona zona) {
+	public void setZona(List<Zona> zona) {
 		this.zona = zona; 
 	}
 	public static int totalAnimales() {
 		return Animal.totalAnimales;
 	}
 	public  static String  totalPorTipo() {
-		 return ("Mamiferos: " + Mamifero.cantidadMamiferos()+"\nAves: "+ Ave.cantidadAves() + "\nReptiles: " + Reptil.cantidadReptiles() + "\nPeces: " + Pez.cantidadPeces() + "\nAnfibios: " + Anfibio.cantidadAnfibios());
+		 return ("Mamiferos: " + Mamifero.cantidadMamiferos() + "\nAves: "+ Ave.cantidadAves() + "\nReptiles: " + Reptil.cantidadReptiles() + "\nPeces: " + Pez.cantidadPeces() + "\nAnfibios: " + Anfibio.cantidadAnfibios());
 		 	}
 	@Override
 	public String toString() { 
         if(this.zona == null)
             return "Mi nombre es " + this.getNombre() + ", tengo una edad de " + this.getEdad() + ", habito en " + this.getHabitat() + " y mi genero es " + this.getGenero() ;
             
-        return "Mi nombre es " + this.getNombre() + ", tengo una edad de " + this.getEdad() + ", habito en " + this.getHabitat() + " y mi genero es " + this.getGenero() + ", la zona en la que me ubico es" + this.getZona() + ", en el zoo" + this.zona.getZoo();
+        return "Mi nombre es " + this.getNombre() + ", tengo una edad de " + this.getEdad() + ", habito en " + this.getHabitat() + " y mi genero es " + this.getGenero() + ", la zona en la que me ubico es" + this.zona.get(0) + ", en el" + this.zona.get(0).getZoo();
     }
 
 	public String  movimiento() {
 		return "desplazarse";
 	}
-	
 }
