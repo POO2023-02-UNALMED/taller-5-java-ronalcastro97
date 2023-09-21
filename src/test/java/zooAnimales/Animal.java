@@ -66,9 +66,11 @@ public class Animal {
 		 	}
 	@Override
 	public String toString() { 
-		return "mi nombre es" + this.nombre + ", tengo una edad de " + this.edad + ", habito en" + this.habitat +
-				"y mi genero es" + this.genero;
-	}
+        if(this.zona == null)
+            return "Mi nombre es " + this.getNombre() + ", tengo una edad de " + this.getEdad() + ", habito en " + this.getHabitat() + " y mi genero es " + this.getGenero() ;
+            
+        return "Mi nombre es " + this.getNombre() + ", tengo una edad de " + this.getEdad() + ", habito en " + this.getHabitat() + " y mi genero es " + this.getGenero() + ", la zona en la que me ubico es" + this.getZona() + ", en el zoo" + this.zona.getZoo();
+    }
 
 	public String  movimiento() {
 		return "desplazarse";
