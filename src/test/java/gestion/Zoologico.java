@@ -6,13 +6,13 @@ import zooAnimales.*;
 public class Zoologico {
 	private String nombre;
 	private String ubicacion;
-	private ArrayList<Zona>Zonas;
+	private ArrayList<Zona>Zona;
 	public Zoologico() {
 		
 	}
 	
 	public Zoologico(String nombre,String ubicacion) {
-		this.Zonas=new ArrayList<>();
+		this.Zona=new ArrayList<>();
 	}
 
 	public String getNombre() {
@@ -32,14 +32,14 @@ public class Zoologico {
 	}
 
 	public ArrayList<Zona> getZonas() {
-		return Zonas;
+		return Zona;
 	}
 
 	public void setZonas(ArrayList<Zona> zonas) {
-		Zonas = zonas;
+		Zona = zonas;
 	}
 	public void agregarZonas(Zona zona) {
-		this.Zonas.add(zona);
+		this.Zona.add(zona);
 	}
 	public int cantidadTotalAnimales() {
 		 return Animal.getTotalAnimales();
