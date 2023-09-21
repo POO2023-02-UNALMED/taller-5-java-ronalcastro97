@@ -2,7 +2,6 @@ package gestion;
 import java.util.ArrayList;
 
 import zooAnimales.*;
-
 public class Zona {
 	private String nombre;
 	private Zoologico Zoo;
@@ -45,6 +44,5 @@ public class Zona {
 	public int cantidadAnimales() {
 		return this.animales.size();
 	}
-	
 	
 }
