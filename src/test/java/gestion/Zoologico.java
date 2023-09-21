@@ -45,8 +45,12 @@ public class Zoologico {
 	public void agregarZonas(Zona zona) {
 		this.Zona.add(zona);
 	}
-	public int cantidadTotalAnimales() {
-		 return Animal.getTotalAnimales();
-	}
+    public int cantidadTotalAnimales(){
+        int total = 0;
+        for (int i = 0;i<Zona.size();i++)
+            total = total + Zona.get(i).cantidadAnimales();
+        
+        return total;
+    }
 }
 	
