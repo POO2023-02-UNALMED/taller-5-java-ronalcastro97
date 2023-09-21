@@ -57,11 +57,7 @@ public class Animal {
 		this.zona = zona; 
 	}
 	public  static String  totalPorTipo() {
-		return ("Mamiferos:" + Mamifero.getListado().size() + "\n" +
-				"Aves:" + Ave.getListado().size() + "\n" +
-				 "Reptiles:" + Reptil.getListado().size() + 
-				 "Peces:" + Pez.getListado().size() + 
-				 "Anfibios:" + Anfibio.getListado().size());
+		return ("Mamiferos: " + Mamifero.getListado().size() +"\nAves:" + Ave.getListado().size() + "\nReptiles: " + Reptil.getListado().size() + "\nPeces: " + Pez.getListado().size() + "\nAnfibios: " + Anfibio.getListado().size());
 
 		 	}
 	@Override
