@@ -62,7 +62,7 @@ public class Pez extends Animal{
 		Pez.bacalaos++;
 		return bacalao;
 	}
-	public static int cantidadPeces() {
-		return Pez.getListado().size();
+	public static int CantidadPeces() {
+		return listado.size();
 	}
 }
