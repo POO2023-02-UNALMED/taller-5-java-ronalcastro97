@@ -71,6 +71,6 @@ public class Mamifero extends Animal{
 		return leon;
 	}
 	public static int cantidadMamiferos() {
-		return Mamifero.getListado().size();
+		return listado.size();
 	}
 	}

@@ -39,6 +39,7 @@ public class Ave extends Animal{
 	public void setColorPlumas(String colorPlumas) {
 		this.colorPlumas = colorPlumas;
 	}
+	@Override
 	public String movimiento() {
 		return "volar";
 	}
@@ -54,6 +55,6 @@ public class Ave extends Animal{
 		return aguila;
 	}
 	public static int cantidadAves() {
-		return Ave.getListado().size();
+		return listado.size();
 	}
 }
