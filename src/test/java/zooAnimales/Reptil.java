@@ -61,7 +61,7 @@ public class Reptil extends Animal{
 		Reptil.serpientes++;
 		return serpiente;
 	}
-	public static int CantidadReptiles() {
-		return listado.size();
+	public static int cantidadReptiles() {
+		return Reptil.listado.size();
 		}
 }
