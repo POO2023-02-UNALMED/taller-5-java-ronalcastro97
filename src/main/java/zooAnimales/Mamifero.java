@@ -9,6 +9,8 @@ public class Mamifero extends Animal{
 	private  int patas;
 	
 	public Mamifero() {
+		super();
+		this.listado=new ArrayList<>();
 	}
 	
 	public Mamifero(String nombre,int edad,String habitat,String genero,boolean pelaje,int patas){

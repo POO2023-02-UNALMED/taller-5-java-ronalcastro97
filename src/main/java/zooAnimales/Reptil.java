@@ -10,7 +10,7 @@ public class Reptil extends Animal{
 	private int largoCola;
 	public Reptil() {
 		super();
-
+		this.listado=new ArrayList<>();
 	}
 	public Reptil(String nombre, int edad, String habitat, String genero,String colorEscamas,int largoCola) {
 		super(nombre, edad, habitat, genero);

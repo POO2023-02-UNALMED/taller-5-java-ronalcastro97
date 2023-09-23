@@ -9,6 +9,7 @@ public class Ave extends Animal{
 	private  String colorPlumas;
 	public Ave() {
 		super();
+		this.listado=new ArrayList<>();
 	}
 	public Ave(String nombre, int edad, String habitat, String genero,String colorPlumas) {
 		super(nombre, edad, habitat, genero);

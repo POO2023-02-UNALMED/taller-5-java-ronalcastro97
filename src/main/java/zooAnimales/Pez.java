@@ -11,6 +11,7 @@ public class Pez extends Animal{
 	private int cantidadAletas;
 	public Pez() {
 		super();
+		this.listado=new ArrayList<>();
 
 	}
 	public Pez(String nombre, int edad, String habitat, String genero,String colorEscamas, int cantidadAletas) {
