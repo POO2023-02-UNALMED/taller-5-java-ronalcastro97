@@ -64,7 +64,7 @@ public class Animal {
 	public  static String  totalPorTipo() {
 		 return ("Mamiferos: " + Mamifero.cantidadMamiferos()+"\nAves: "+ Ave.cantidadAves() + "\nReptiles: " + Reptil.cantidadReptiles() + "\nPeces: " + Pez.cantidadPeces() + "\nAnfibios: " + Anfibio.cantidadAnfibios());
     }
-		 	}
+		 	
 	@Override
 	public String toString() { 
 		if (this.zona.size() != 0) {
@@ -84,8 +84,11 @@ public class Animal {
 					", tengo una edad de " + this.edad + 
 					", habito en " + this.habitat + 
 					" y mi genero es " + this.genero);
+		}
+        }
 
 	public String  movimiento() {
 		return "desplazarse";
 	}
 }
+
