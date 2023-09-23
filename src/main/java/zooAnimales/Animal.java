@@ -1,5 +1,5 @@
 package zooAnimales;
-import gestion.*;
+import gestion.*; 
 import java.util.ArrayList;
 import java.util.List;
 
@@ -62,7 +62,8 @@ public class Animal {
 		return Animal.totalAnimales;
 	}
 	public  static String  totalPorTipo() {
-		 return ("Mamiferos: " + Mamifero.cantidadMamiferos() + "\nAves: "+ Ave.cantidadAves() + "\nReptiles: " + Reptil.cantidadReptiles() + "\nPeces: " + Pez.cantidadPeces() + "\nAnfibios: " + Anfibio.cantidadAnfibios());
+		 return ("Mamiferos: " + Mamifero.cantidadMamiferos()+"\nAves: "+ Ave.cantidadAves() + "\nReptiles: " + Reptil.cantidadReptiles() + "\nPeces: " + Pez.cantidadPeces() + "\nAnfibios: " + Anfibio.cantidadAnfibios());
+    }
 		 	}
 	@Override
 	public String toString() { 
