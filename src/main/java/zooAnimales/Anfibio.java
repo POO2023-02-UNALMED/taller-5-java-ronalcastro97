@@ -2,22 +2,22 @@ package zooAnimales;
 import gestion.Zona;
 import java.util.ArrayList;
 public class Anfibio extends Animal{
-	private static ArrayList<Anfibio>	listado;
+	private static ArrayList<Anfibio>listado=new ArrayList<>();
 	public static int ranas=0;
 	public static int salamandras=0;
 	private String colorPiel;
 	private boolean venenoso;
 
 	public Anfibio() {
-		super();
-		this.listado=new ArrayList<>();
+    	super();
+        Anfibio.listado.add(this);
 	}
 	
 	public Anfibio(String nombre,int edad,String habitat,String genero,String colorPiel,boolean venenoso) {
 		super(nombre,edad,habitat,genero);
+		super(nombre,edad,habitat,genero);
 		this.colorPiel = colorPiel;
-		this.venenoso = venenoso;
-		this.listado=new ArrayList<>();
+		Anfibio.listado.add(this);
 	
 	}
 
